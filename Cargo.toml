@@ -1,7 +1,7 @@
 [package]
 name = "tousize"
 description = "A helper trait to convert values into usize."
-version = "0.0.0"
+version = "0.1.0"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/SirWindfield/tousize"
