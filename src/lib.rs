@@ -23,6 +23,9 @@ impl ToUsize for u16 {
     }
 }
 
+// 16bit platforms use a `usize` of 16bit. Converting using a cast would fail on
+// those systems.
+#[cfg(any(target_pointer_width = "32", target_pointer_width = "64"))]
 impl ToUsize for u32 {
     #[inline]
     fn to_usize(&self) -> usize {
